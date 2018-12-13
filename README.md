@@ -1,4 +1,4 @@
-# To Provision cluster and run:
+# To Provision Cluster and Run:
 1) ./fresh.sh
 2) make new
 3) make start-cluster
