@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+        instaclone-service:
+                build: 
+                       context: .
+                image: 'instaclone-service'
+                ports:
+                        - 80:80
