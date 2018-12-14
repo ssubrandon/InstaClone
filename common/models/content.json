@@ -1,14 +1,22 @@
 {
-  "name": "comments",
+  "name": "content",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "body": {
+    "picture": {
       "type": "string",
       "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "tags": {
+      "type": [
+        "string"
+      ]
     }
   },
   "validations": [],

@@ -1,18 +1,15 @@
 {
-  "name": "comments",
+  "name": "subscriptions",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
-  "properties": {
-    "body": {
-      "type": "string",
-      "required": true
-    }
-  },
+  "properties": {},
   "validations": [],
-  "relations": {},
+  "relations": {
+
+  },
   "acls": [],
   "methods": {}
 }

@@ -14,7 +14,7 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "Firestore"
   },
   "AccessToken": {
     "dataSource": "db",
@@ -36,6 +36,18 @@
     "public": false
   },
   "comments": {
+    "dataSource": "Firestore",
+    "public": true
+  },
+  "content": {
+    "dataSource": "Firestore",
+    "public": true
+  },
+  "account": {
+    "dataSource": "Firestore",
+    "public": true
+  },
+  "subscriptions": {
     "dataSource": "Firestore",
     "public": true
   }
