@@ -1,9 +1,15 @@
 {
   "initial:before": {
-    "loopback#favicon": {}
+    "loopback#favicon": {},
+    "loopback#token": {}
   },
   "initial": {
     "compression": {},
+    "loopback-context#per-request": {
+      "params": {
+        "enableHttpContext": true
+      }
+    },
     "cors": {
       "params": {
         "origin": true,
@@ -30,8 +36,21 @@
       "enabled": false
     }
   },
-  "session": {},
-  "auth": {},
+  "session:before": {
+    "cookie-parser": {
+      "params": "${cookieSecret}"
+    }
+  },
+  "auth": {
+    "loopback#token": {
+      "params": {
+        "currentUserLiteral": "me"
+      }
+    }
+  },
+  "auth:after": {
+    "./store-current-user": {}
+  },
   "parse": {},
   "routes": {
     "loopback#rest": {

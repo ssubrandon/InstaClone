@@ -6,10 +6,6 @@
     "validateUpsert": true
   },
   "properties": {
-    "picture": {
-      "type": "string",
-      "required": true
-    },
     "description": {
       "type": "string"
     },
@@ -20,7 +16,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "images": {
+      "type": "belongsTo",
+      "model": "images",
+      "foreignKey": "imageId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

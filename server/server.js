@@ -1,9 +1,21 @@
 'use strict';
-
+require('cls-hooked');
 var loopback = require('loopback');
 var boot = require('loopback-boot');
-
+var cookieParser = require('cookie-parser');
 var app = module.exports = loopback();
+
+app.use(loopback.token({
+  model: app.models.accessToken,
+  currentUserLiteral: 'me',
+  searchDefaultTokenKeys: false,
+  cookies: ['access_token'],
+  headers: ['access_token', 'X-Access-Token'],
+  params: ['access_token']
+}));
+
+app.use(cookieParser());
+
 
 app.start = function() {
   // start the web server

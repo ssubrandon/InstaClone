@@ -1,26 +1,24 @@
 {
-  "name": "subscriptions",
+  "name": "images",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
-  "mixins": {},
   "properties": {
-    "tags": {
-      "type": [
-        "string"
-      ],
+    "url": {
+      "type": "string",
       "required": true
     }
   },
   "validations": [],
   "relations": {
-    "account": {
-      "type": "belongsTo",
-      "model": "account",
-      "foreignKey": "accountid"
+    "comments": {
+      "type": "hasMany",
+      "model": "comments",
+      "foreignKey": ""
     }
+
   },
   "acls": [],
   "methods": {}

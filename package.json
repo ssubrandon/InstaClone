@@ -11,14 +11,18 @@
     "posttest": "npm run lint"
   },
   "dependencies": {
+    "cls-hooked": "^4.2.2",
     "compression": "^1.0.3",
+    "cookie-parser": "^1.4.3",
     "cors": "^2.5.2",
+    "firebase-admin": "^6.4.0",
     "helmet": "^3.10.0",
     "loopback": "^3.22.0",
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^6.2.0",
     "loopback-connector-firebase": "^0.5.0",
     "loopback-connector-firestore": "^1.0.7",
+    "loopback-context": "^3.3.0",
     "serve-favicon": "^2.0.1",
     "strong-error-handler": "^3.0.0"
   },

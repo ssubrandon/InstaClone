@@ -8,13 +8,15 @@
     ],
     "mixins": [
       "loopback/common/mixins",
+      "InstaClone/common/mixins",
       "loopback/server/mixins",
       "../common/mixins",
+      "./common/mixins",
       "./mixins"
     ]
   },
   "User": {
-    "dataSource": "Firestore"
+    "dataSource": "db"
   },
   "AccessToken": {
     "dataSource": "db",
@@ -50,5 +52,13 @@
   "subscriptions": {
     "dataSource": "Firestore",
     "public": true
+  },
+  "subscribers": {
+    "dataSource": "Firestore",
+    "public": true
+  },
+  "images": {
+    "dataSource": "Firestore",
+    "public": false
   }
 }
