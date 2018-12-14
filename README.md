@@ -9,11 +9,11 @@
 >make start-cluster
 
 **creates a docker image and copies the image onto kubernetes cluster** 
->make kompose
+>make instaclone
 
 # To Clean:
 **removes any images from kubernetes** 
->make kompose-clean
+>make instaclone-clean
 
 **shuts down the kubernetes cluster**  
 >make shutdown-cluster
