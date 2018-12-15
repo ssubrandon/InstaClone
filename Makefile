@@ -9,4 +9,4 @@ start-cluster:
 	gcloud container clusters create instaclone-cluster --zone us-west1-c
 
 shutdown-cluster:
-	gcloud container clusters delete instacluster --zone us-west1-c
+	gcloud container clusters delete instaclone-cluster --zone us-west1-c
